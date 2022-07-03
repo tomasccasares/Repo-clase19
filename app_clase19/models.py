@@ -10,4 +10,20 @@ class Productos(models.Model):
 # objetos de tipo: class, en este caso de tipo: Productos
 # entonces en el template, en: {% for elemento in productos %}
 # la variable de control: elemento, por cada elemento(objeto) que tome dentro de la lista de objetos que se encuentra
-# comovalor de la clave: productos, sera tambien un objeto de tipo: class tambien
+# como valor de la clave(del dict): productos, sera tambien un objeto de tipo: class 
+
+class Estudiante(models.Model):
+
+    nombre = models.CharField(max_length=40) 
+    apellido = models.CharField(max_length=40)
+    email = models.EmailField() # tambien instancio entre ''
+
+# tarea: agregar estos nuevos modelos 
+class Curso(models.Model):
+    pass
+
+class Profesor(models.Model):
+    pass
+
+class Entregable(models.Model):
+    pass
