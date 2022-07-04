@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         
-        {% load static %}
+        {% load static %} <!--toma el paquete static, o sea busca adentro y dentro esta el css con el stylecss-->
         
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -16,7 +16,8 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{% static 'app_clase19/static/app_clase19/css/styles.css' %}" rel="stylesheet" />
+        <link href="{% static 'app_clase19/css/styles.css' %}" rel="stylesheet" />
+        <!-- esta ruta dentro de href, es la ruta -->
     </head>
     <body>
         <!-- Navigation-->
@@ -33,7 +34,7 @@
                     <div class="col-xl-6">
                         <div class="text-center text-white">
                             <!-- Page heading-->
-                            <h1 class="mb-5">Generate more leads with a professional landing page!</h1>
+                            <h1 class="mb-5"> {{mi_titulo}} </h1> 
                             <!-- Signup form-->
                             <!-- * * * * * * * * * * * * * * *-->
                             <!-- * * SB Forms Contact Form * *-->

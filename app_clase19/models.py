@@ -18,12 +18,4 @@ class Estudiante(models.Model):
     apellido = models.CharField(max_length=40)
     email = models.EmailField() # tambien instancio entre ''
 
-# tarea: agregar estos nuevos modelos 
-class Curso(models.Model):
-    pass
 
-class Profesor(models.Model):
-    pass
-
-class Entregable(models.Model):
-    pass

@@ -17,18 +17,12 @@ def listado_de_estudiantes(request):
 
 
 
-def a():
-    pass
-def b():
-    pass
-def g():
-    pass
-
 
 
 def mostrar_index(request):
-    
-    return render(request, 'app_clase19/index.html', {})
+
+    #                                               aca esta el contexto con la variable y el valor
+    return render(request, 'app_clase19/index.html', {'mi_titulo' : 'Hola! este es mi primer website :) '})
 
 
 
