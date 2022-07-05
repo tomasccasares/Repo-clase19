@@ -3,8 +3,8 @@ from django.db import models
 class Productos(models.Model):
     
     producto = models.CharField(max_length = 40)
-
     cantidad = models.IntegerField()
+
 
 # al instanciar la clase y crear objetos nuevos, esos objetos donde almaceno la instanciacion, pasan a ser
 # objetos de tipo: class, en este caso de tipo: Productos
@@ -18,4 +18,17 @@ class Estudiante(models.Model):
     apellido = models.CharField(max_length=40)
     email = models.EmailField() # tambien instancio entre ''
 
+class Curso(models.Model):
+    
+    nombre = models.CharField(max_length = 30)
+    camada = models.IntegerField()
+    fechaDeInicio = models.DateField()
+    fechaDeFin = models.DateField()
+
+class Profesor(models.Model):
+
+    nombre = models.CharField(max_length = 30)
+    apellido = models.CharField(max_length = 30)
+    profesion = models.CharField(max_length = 30)
+    email = models.EmailField()
 

@@ -8,9 +8,9 @@
 </head>
 <body>
     <ul>
-        {% for elemento in productos %} <!--elemento es un objeto de tipo: productos(class)(ver poo)-->
-            <li>  {{elemento.producto}}, {{elemento.cantidad}} renderizado </li> 
-        {% endfor %}                                             
+        {% for elemento in profesor %}
+            <li> {{elemento.nombre}}, {{elemento.apellido}}, {{elemento.profesion}}, {{elemento.email}} </li>
+        {% endfor %}
     </ul>
 </body>
 </html>
